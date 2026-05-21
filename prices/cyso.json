@@ -17,7 +17,7 @@
       "price_monthly": 17.5,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "standard"
     },
     {
@@ -31,7 +31,7 @@
       "price_monthly": 37.5,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "standard"
     },
     {
@@ -45,7 +45,7 @@
       "price_monthly": 75,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "standard"
     },
     {
@@ -59,7 +59,7 @@
       "price_monthly": 150,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "standard"
     },
     {
@@ -73,7 +73,7 @@
       "price_monthly": 300,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "standard"
     },
     {
@@ -87,7 +87,7 @@
       "price_monthly": 600,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "standard"
     },
     {
@@ -101,7 +101,7 @@
       "price_monthly": 22,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "cpu-optimized"
     },
     {
@@ -115,7 +115,7 @@
       "price_monthly": 43.75,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "cpu-optimized"
     },
     {
@@ -129,7 +129,7 @@
       "price_monthly": 87.5,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "cpu-optimized"
     },
     {
@@ -143,7 +143,7 @@
       "price_monthly": 175,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "cpu-optimized"
     },
     {
@@ -157,7 +157,7 @@
       "price_monthly": 350,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "cpu-optimized"
     },
     {
@@ -171,7 +171,7 @@
       "price_monthly": 700,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "cpu-optimized"
     },
     {
@@ -185,7 +185,7 @@
       "price_monthly": 26.75,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "memory-optimized"
     },
     {
@@ -199,7 +199,7 @@
       "price_monthly": 53.5,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "memory-optimized"
     },
     {
@@ -213,7 +213,7 @@
       "price_monthly": 126.25,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "memory-optimized"
     },
     {
@@ -227,7 +227,7 @@
       "price_monthly": 212.5,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "memory-optimized"
     },
     {
@@ -241,7 +241,7 @@
       "price_monthly": 425,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "memory-optimized"
     },
     {
@@ -255,7 +255,7 @@
       "price_monthly": 850,
       "currency": "EUR",
       "architecture": "x86",
-      "location": "nl-ams",
+      "location": "eu",
       "category": "memory-optimized"
     }
   ],

@@ -379,7 +379,8 @@
     "managed_k8s": true,
     "control_plane_cost": 29.99,
     "locations": [
-      "nl-ams"
+      "nl-ams",
+      "ge-fra"
     ],
     "certifications": [
       "ISO27001"
