@@ -138,7 +138,7 @@
     "flag": "/flags/ch.svg",
     "type": "managed",
     "managed_k8s": true,
-    "control_plane_cost": 40.15,
+    "control_plane_cost": 0,
     "locations": [
       "ch-gva-2",
       "ch-dk-2",
