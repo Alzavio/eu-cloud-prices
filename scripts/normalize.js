@@ -1,6 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const pricesDir = path.join(__dirname, '..', 'prices');
 const outputFile = process.argv[2] || 'normalized-automated.json';
 
@@ -20,8 +22,14 @@ Object.keys(providers).sort().forEach(key => {
   sortedProviders[key] = providers[key];
 });
 
+const oldestFetchedAt = Object.values(sortedProviders)
+  .map(p => p.fetched_at)
+  .filter(Boolean)
+  .sort()[0]; // ISO string lexicographic sort is correct for date ordering
+
 const output = {
-  last_updated: new Date().toISOString(),
+  last_updated: oldestFetchedAt || new Date().toISOString(),
+  build_timestamp: new Date().toISOString(),
   providers: sortedProviders
 };
 
