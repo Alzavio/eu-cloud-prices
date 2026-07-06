@@ -69,6 +69,10 @@
     "verified": false,
     "notes": "Stated by user as included with Atlantic.Cloud VPS; could not be independently confirmed from public Atlantic.Cloud documentation at time of writing. Flagging as unverified rather than asserting as researched fact."
   },
+  "egress": {
+    "free_tb": "unlimited",
+    "price_per_gb": 0
+  },
   "locations": [
     "Portugal (Madeira)"
   ],
