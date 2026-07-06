@@ -1,0 +1,76 @@
+{
+  "provider": "atlanticcloud",
+  "fetched_at": "2026-07-06T00:00:00.000Z",
+  "source": "https://api.atlantic.cloud/offer/vps-config?currency=EUR&trackViewItem=true",
+  "manual": false,
+  "pricing_model": "configurable",
+  "currency": "EUR",
+  "vat_included": false,
+  "cpu": {
+    "price_monthly_per_core": 1.3,
+    "price_yearly_per_core": 15.6,
+    "options_cores": [2, 4, 6, 8, 12, 16]
+  },
+  "ram": {
+    "price_monthly_per_gb": 0.4,
+    "price_yearly_per_gb": 4.8,
+    "options_gb": [4, 8, 12, 16, 24, 32]
+  },
+  "disk": {
+    "type": "SSD",
+    "price_monthly_per_gb": 0.03,
+    "price_yearly_per_gb": 0.36,
+    "options_gb": [60, 120, 180, 240, 300, 400, 500]
+  },
+  "extra_capacity": {
+    "price_monthly_per_gb": 0.07,
+    "price_yearly_per_gb": 0.84,
+    "min_gb": 40,
+    "max_gb": 500,
+    "step_gb": 10
+  },
+  "example_computed_configs": [
+    {
+      "note": "Computed from official per-unit API prices above, not a named/fixed plan",
+      "vcpu": 2,
+      "ram_gb": 4,
+      "disk_gb": 60,
+      "price_monthly": 6.0,
+      "currency": "EUR"
+    },
+    {
+      "note": "Computed from official per-unit API prices above, not a named/fixed plan",
+      "vcpu": 8,
+      "ram_gb": 16,
+      "disk_gb": 240,
+      "price_monthly": 24.4,
+      "currency": "EUR"
+    },
+    {
+      "note": "Computed from official per-unit API prices above, not a named/fixed plan",
+      "vcpu": 16,
+      "ram_gb": 32,
+      "disk_gb": 500,
+      "price_monthly": 47.4,
+      "currency": "EUR"
+    }
+  ],
+  "block_storage": {
+    "price_per_gb_monthly": 0.0524,
+    "type": "SSD",
+    "products": {
+      "volumes": "Attachable to VPS instances, up to 10TB per volume, up to 16 volumes per VPS",
+      "storage_box": "Network-attached storage for dedicated servers, up to 100TB, multiple boxes per server"
+    },
+    "source": "https://atlantic.cloud/en/vps"
+  },
+  "ipv4": {
+    "included": true,
+    "verified": false,
+    "notes": "Stated by user as included with Atlantic.Cloud VPS; could not be independently confirmed from public Atlantic.Cloud documentation at time of writing. Flagging as unverified rather than asserting as researched fact."
+  },
+  "locations": [
+    "Portugal (Madeira)"
+  ],
+  "notes": "Atlantic.Cloud (atlantic.cloud, VPS/VDS Hosting Portugal/Madeira) uses a fully configurable slider-based pricing model rather than fixed instance tiers - vCPU, RAM, and disk are each priced per unit and combined into a custom monthly price. The vps-config API does not expose fixed plan names or a shared/dedicated split, and repeated queries with different params returned the same single config, so no dedicated-vCPU-specific pricing could be confirmed. Do not confuse with the unrelated US company Atlantic.Net (atlantic.net)."
+}
