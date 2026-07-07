@@ -28,7 +28,7 @@
     "gpu_available": true
   },
   {
-  "hetzner": {
+  "euronodes": {
     "name": "Euronodes",
     "country": "CY",
     "flag": "/flags/cy.svg",
