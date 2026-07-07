@@ -111,18 +111,21 @@
   ],
   "egress": {
     "free_tb": 20,
-    "notes": "20TB bandwidth included on every listed plan; site advertises 'no transfer fees' (no stated overage rate found)"
+    "notes": "20TB bandwidth included on every listed plan"
   },
   "ipv4": {
     "included": false,
     "verified": true,
     "price_monthly": 0.70,
-    "notes": "Dedicated IPv4 costs an extra €0.70/month; IPv6 is always included at no charge. Unlike Atlantic.Cloud, IPv4 is not bundled by default."
+    "notes": "Dedicated IPv4 costs an extra €0.70/month; IPv6 is always included at no charge"
   },
-  "cpu_allocation": "Enforced uncapped 3:1 vCPU:thread allocation on Intel Xeon Gold hardware, marketed as dedicated (non-shared) cores",
   "locations": [
     "Portugal",
     "Czech Republic"
   ],
-  "notes": "Prices reflect the current 'Summer Sale / 10 Years' promotional table shown on https://euronodes.com/cloud at time of fetch; no separate non-promotional list price was shown on the page. Euronodes Ltd. is registered in Limassol, Cyprus, with data center locations also listed elsewhere on the site (Frankfurt, Lisbon, Madrid, Prague) though only Portugal and Czech Republic were shown for VPS specifically."
+  "object_storage": {
+    "available": true,
+    "base_monthly": 3.99,
+    "notes": "Pricing is per terabyte and rounded up to the next full TB"
+  }
 }
