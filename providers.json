@@ -44,7 +44,7 @@
       "ISO14001",
       "ISO45001"
     ],
-    "egress_free_tb": "20",
+    "egress_free_tb": 20,
     "website": "https://euronodes.com/",
     "api_pricing_url": "https://euronodes.com/cloud",
     "storage_iops": {
@@ -142,7 +142,7 @@
     "certifications": [
       "ISO27001"
     ],
-    "egress_free_tb": 0,
+    "egress_free_tb": 2,
     "website": "https://cloud.ionos.com/managed-kubernetes",
     "storage_iops": {
       "max_iops": 45000,
@@ -183,7 +183,7 @@
     "flag": "/flags/ch.svg",
     "type": "managed",
     "managed_k8s": true,
-    "control_plane_cost": 0,
+    "control_plane_cost": 40.15,
     "locations": [
       "ch-gva-2",
       "ch-dk-2",
@@ -638,7 +638,7 @@
     "flag": "/flags/nl.svg",
     "type": "managed",
     "managed_k8s": true,
-    "control_plane_cost": 19,
+    "control_plane_cost": 21.85,
     "locations": [
       "nl-ams",
       "us-nj",
@@ -673,7 +673,7 @@
     "flag": "/flags/se.svg",
     "type": "managed",
     "managed_k8s": true,
-    "control_plane_cost": 0,
+    "control_plane_cost": 436.1,
     "locations": [
       "se-sto",
       "no-osl"
@@ -681,7 +681,7 @@
     "certifications": [
       "ISO27001"
     ],
-    "egress_free_tb": 0,
+    "egress_free_tb": "unlimited",
     "website": "https://www.safespring.com/",
     "gpu_available": true
   },
@@ -696,7 +696,7 @@
       "nl-ams"
     ],
     "certifications": [],
-    "egress_free_tb": 0,
+    "egress_free_tb": "unlimited",
     "website": "https://thalassa.cloud/",
     "gpu_available": false
   },
@@ -731,7 +731,7 @@
     "flag": "/flags/de.svg",
     "type": "managed",
     "managed_k8s": true,
-    "control_plane_cost": 73,
+    "control_plane_cost": 50,
     "locations": [
       "DE-HAM1",
       "DE-HAM2",
