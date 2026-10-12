@@ -1,10 +1,10 @@
 {
   "provider": "scaleup",
-  "fetched_at": "2026-06-15T00:00:00.000Z",
+  "fetched_at": "2026-10-12T00:00:00.000Z",
   "source": "Preisliste ScaleUp Open Cloud 2026-03, Preisliste OpenStack 2022-07",
   "source_url": "https://www.scaleuptech.com/de/open-cloud/",
   "manual": true,
-  "control_plane_cost": 73,
+  "control_plane_cost": 50,
   "instances": [
     {
       "id": "m2.micro",
@@ -139,5 +139,5 @@
     "free_tb": "unlimited",
     "notes": "Free with fair use policy"
   },
-  "notes": "Pricing is resource-based: 0.02€/h per CPU core, 0.005€/h per GB RAM (730h/month). Based on Sovereign Cloud Stack (SCS). K8s non-HA: 0.10€/h (73€/month), K8s HA: 0.30€/h (219€/month). Resource packages available with 12-month commitment."
+  "notes": "Pricing is resource-based: 0.02€/h per CPU core, 0.005€/h per GB RAM (730h/month). Based on Sovereign Cloud Stack (SCS). Managed Kubernetes control plane: single node €50/month, HA €150/month. Resource packages available with 12-month commitment."
 }

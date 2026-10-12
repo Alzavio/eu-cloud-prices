@@ -1,6 +1,6 @@
 {
   "provider": "webdock",
-  "fetched_at": "2026-06-15T00:00:00.000Z",
+  "fetched_at": "2026-10-12T00:00:00.000Z",
   "source": "static",
   "source_url": "https://webdock.io/en/pricing",
   "manual": true,
@@ -63,7 +63,7 @@
   },
   "egress": {
     "free_tb": 1,
-    "price_per_gb": 0,
+    "price_per_gb": 0.0025,
     "notes": "1-7TB included depending on plan. Fair usage policy."
   },
   "object_storage": {
