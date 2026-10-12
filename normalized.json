@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-02T18:14:04Z",
-  "build_timestamp": "2026-10-11T21:05:40.494Z",
+  "last_updated": "2026-10-12T00:00:00.000Z",
+  "build_timestamp": "2026-10-12T11:31:12.605Z",
   "providers": {
     "arubacloud": {
       "provider": "arubacloud",
-      "fetched_at": "2026-05-20T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "static",
       "source_url": "https://www.arubacloud.com/vps/",
       "manual": true,
@@ -135,7 +135,7 @@
         "notes": "Bandwidth included per plan (2TB-100TB)."
       },
       "object_storage": {
-        "price_per_gb_monthly": 0.03,
+        "price_per_gb_monthly": 0.0204,
         "type": "S3-compatible",
         "notes": "Aruba Object Storage available"
       }
@@ -19845,8 +19845,8 @@
     },
     "c1v": {
       "provider": "c1v",
-      "fetched_at": "2026-05-20T00:00:00.000Z",
-      "source": "c1vhosting.it/store/linux-vps-ssd",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
+      "source": "c1vhosting.it/store/linux-vps-high-cpu",
       "manual": true,
       "instances": [
         {
@@ -19855,9 +19855,9 @@
           "vcpu": 2,
           "ram_gb": 2,
           "disk_gb": 40,
-          "disk_type": "ssd",
-          "price_hourly": 0.00829,
-          "price_monthly": 6.05,
+          "disk_type": "nvme",
+          "price_hourly": 0.01232,
+          "price_monthly": 8.99,
           "currency": "EUR",
           "architecture": "x86",
           "location": "it-rom",
@@ -19869,9 +19869,9 @@
           "vcpu": 2,
           "ram_gb": 4,
           "disk_gb": 60,
-          "disk_type": "ssd",
-          "price_hourly": 0.00934,
-          "price_monthly": 6.82,
+          "disk_type": "nvme",
+          "price_hourly": 0.01368,
+          "price_monthly": 9.99,
           "currency": "EUR",
           "architecture": "x86",
           "location": "it-rom",
@@ -19883,9 +19883,9 @@
           "vcpu": 4,
           "ram_gb": 8,
           "disk_gb": 100,
-          "disk_type": "ssd",
-          "price_hourly": 0.0113,
-          "price_monthly": 8.25,
+          "disk_type": "nvme",
+          "price_hourly": 0.01711,
+          "price_monthly": 12.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "it-rom",
@@ -19897,9 +19897,9 @@
           "vcpu": 4,
           "ram_gb": 16,
           "disk_gb": 150,
-          "disk_type": "ssd",
-          "price_hourly": 0.01432,
-          "price_monthly": 10.45,
+          "disk_type": "nvme",
+          "price_hourly": 0.02122,
+          "price_monthly": 15.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "it-rom",
@@ -19911,9 +19911,9 @@
           "vcpu": 8,
           "ram_gb": 20,
           "disk_gb": 200,
-          "disk_type": "ssd",
-          "price_hourly": 0.02411,
-          "price_monthly": 17.6,
+          "disk_type": "nvme",
+          "price_hourly": 0.03492,
+          "price_monthly": 25.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "it-rom",
@@ -19925,11 +19925,11 @@
         "bandwidth_gbps": 1,
         "notes": "20TB @ 1Gbps bandwidth included"
       },
-      "notes": "RAID 10 SSD storage, DDR4 ECC RAM. Datacenter in Pomezia, Rome. IPv4 + IPv6 included."
+      "notes": "High-CPU VPS, NVMe storage, DDR4 ECC RAM. Datacenter in Pomezia, Rome. IPv4 + IPv6 included. Store page does not state whether prices include 22% IT VAT. Hourly = monthly/730 (not published)."
     },
     "civo": {
       "provider": "civo",
-      "fetched_at": "2026-05-20T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "static",
       "source_url": "https://www.civo.com/pricing",
       "manual": true,
@@ -20097,7 +20097,7 @@
           "disk_gb": 80,
           "disk_type": "nvme",
           "price_hourly": 0.380952,
-          "price_monthly": 278.1,
+          "price_monthly": 278.09,
           "currency": "USD",
           "architecture": "x86",
           "location": "global",
@@ -20440,78 +20440,6 @@
           "category": "gpu"
         },
         {
-          "id": "gpu-h100-pci-small",
-          "name": "GPU H100 PCI Small (1x)",
-          "vcpu": 32,
-          "ram_gb": 192,
-          "disk_gb": 400,
-          "disk_type": "nvme",
-          "gpu_count": 1,
-          "gpu_model": "NVIDIA H100 PCI",
-          "gpu_memory_gb": 80,
-          "price_hourly": 2.49,
-          "price_hourly_commitment_36mo": 1.99,
-          "price_monthly": 1817.7,
-          "currency": "USD",
-          "architecture": "x86",
-          "location": "global",
-          "category": "gpu"
-        },
-        {
-          "id": "gpu-h100-pci-medium",
-          "name": "GPU H100 PCI Medium (2x)",
-          "vcpu": 64,
-          "ram_gb": 384,
-          "disk_gb": 800,
-          "disk_type": "nvme",
-          "gpu_count": 2,
-          "gpu_model": "NVIDIA H100 PCI",
-          "gpu_memory_gb": 80,
-          "price_hourly": 4.98,
-          "price_hourly_commitment_36mo": 3.98,
-          "price_monthly": 3635.4,
-          "currency": "USD",
-          "architecture": "x86",
-          "location": "global",
-          "category": "gpu"
-        },
-        {
-          "id": "gpu-h100-pci-large",
-          "name": "GPU H100 PCI Large (4x)",
-          "vcpu": 128,
-          "ram_gb": 768,
-          "disk_gb": 1600,
-          "disk_type": "nvme",
-          "gpu_count": 4,
-          "gpu_model": "NVIDIA H100 PCI",
-          "gpu_memory_gb": 80,
-          "price_hourly": 9.96,
-          "price_hourly_commitment_36mo": 7.96,
-          "price_monthly": 7270.8,
-          "currency": "USD",
-          "architecture": "x86",
-          "location": "global",
-          "category": "gpu"
-        },
-        {
-          "id": "gpu-h100-pci-xlarge",
-          "name": "GPU H100 PCI XLarge (8x)",
-          "vcpu": 256,
-          "ram_gb": 1536,
-          "disk_gb": 3200,
-          "disk_type": "nvme",
-          "gpu_count": 8,
-          "gpu_model": "NVIDIA H100 PCI",
-          "gpu_memory_gb": 80,
-          "price_hourly": 19.92,
-          "price_hourly_commitment_36mo": 15.92,
-          "price_monthly": 14541.6,
-          "currency": "USD",
-          "architecture": "x86",
-          "location": "global",
-          "category": "gpu"
-        },
-        {
           "id": "gpu-h200-sxm-small",
           "name": "GPU H200 SXM Small (1x)",
           "vcpu": 23,
@@ -20554,7 +20482,7 @@
         "notes": "per 10,000 concurrent requests"
       },
       "block_storage": {
-        "price_per_gb_monthly": 0.109,
+        "price_per_gb_monthly": 0.11,
         "currency": "USD"
       },
       "egress": {
@@ -20563,7 +20491,7 @@
         "notes": "Free ingress and egress with no limitations"
       },
       "object_storage": {
-        "price_per_gb_monthly": 0.011,
+        "price_per_gb_monthly": 0.01086,
         "allocation_block_gb": 500,
         "type": "S3-compatible",
         "currency": "USD",
@@ -23865,8 +23793,8 @@
     },
     "hetzner": {
       "provider": "hetzner",
-      "fetched_at": "2026-08-17T00:00:00.000Z",
-      "source": "static (no token)",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
+      "source": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/",
       "manual": true,
       "instances": [
         {
@@ -23876,8 +23804,8 @@
           "ram_gb": 8,
           "disk_gb": 80,
           "disk_type": "nvme",
-          "price_hourly": 0.0829,
-          "price_monthly": 51.75,
+          "price_hourly": 0.0689,
+          "price_monthly": 42.99,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -23890,8 +23818,8 @@
           "ram_gb": 16,
           "disk_gb": 160,
           "disk_type": "nvme",
-          "price_hourly": 0.1649,
-          "price_monthly": 102.92,
+          "price_hourly": 0.1378,
+          "price_monthly": 85.99,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -23904,8 +23832,8 @@
           "ram_gb": 32,
           "disk_gb": 240,
           "disk_type": "nvme",
-          "price_hourly": 0.265,
-          "price_monthly": 165.4,
+          "price_hourly": 0.2219,
+          "price_monthly": 138.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -23918,8 +23846,8 @@
           "ram_gb": 64,
           "disk_gb": 360,
           "disk_type": "nvme",
-          "price_hourly": 0.5273,
-          "price_monthly": 329.02,
+          "price_hourly": 0.4423,
+          "price_monthly": 275.99,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -23932,8 +23860,8 @@
           "ram_gb": 128,
           "disk_gb": 600,
           "disk_type": "nvme",
-          "price_hourly": 1.0184,
-          "price_monthly": 635.45,
+          "price_hourly": 0.855,
+          "price_monthly": 533.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -23946,8 +23874,8 @@
           "ram_gb": 192,
           "disk_gb": 960,
           "disk_type": "nvme",
-          "price_hourly": 1.6286,
-          "price_monthly": 1016.25,
+          "price_hourly": 1.3678,
+          "price_monthly": 853.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -23960,8 +23888,8 @@
           "ram_gb": 4,
           "disk_gb": 40,
           "disk_type": "nvme",
-          "price_hourly": 0.0124,
-          "price_monthly": 7.72,
+          "price_hourly": 0.0096,
+          "price_monthly": 5.99,
           "currency": "EUR",
           "architecture": "arm64",
           "location": "eu",
@@ -23974,8 +23902,8 @@
           "ram_gb": 8,
           "disk_gb": 80,
           "disk_type": "nvme",
-          "price_hourly": 0.0209,
-          "price_monthly": 13.08,
+          "price_hourly": 0.0168,
+          "price_monthly": 10.49,
           "currency": "EUR",
           "architecture": "arm64",
           "location": "eu",
@@ -23988,8 +23916,8 @@
           "ram_gb": 16,
           "disk_gb": 160,
           "disk_type": "nvme",
-          "price_hourly": 0.0409,
-          "price_monthly": 25.57,
+          "price_hourly": 0.0336,
+          "price_monthly": 20.99,
           "currency": "EUR",
           "architecture": "arm64",
           "location": "eu",
@@ -24002,8 +23930,8 @@
           "ram_gb": 32,
           "disk_gb": 320,
           "disk_type": "nvme",
-          "price_hourly": 0.0791,
-          "price_monthly": 49.37,
+          "price_hourly": 0.0657,
+          "price_monthly": 40.99,
           "currency": "EUR",
           "architecture": "arm64",
           "location": "eu",
@@ -24016,8 +23944,8 @@
           "ram_gb": 4,
           "disk_gb": 40,
           "disk_type": "nvme",
-          "price_hourly": 0.0114,
-          "price_monthly": 7.13,
+          "price_hourly": 0.0088,
+          "price_monthly": 5.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24030,8 +23958,8 @@
           "ram_gb": 4,
           "disk_gb": 80,
           "disk_type": "nvme",
-          "price_hourly": 0.0381,
-          "price_monthly": 23.79,
+          "price_hourly": 0.0312,
+          "price_monthly": 19.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24044,8 +23972,8 @@
           "ram_gb": 8,
           "disk_gb": 80,
           "disk_type": "nvme",
-          "price_hourly": 0.0171,
-          "price_monthly": 10.7,
+          "price_hourly": 0.0136,
+          "price_monthly": 8.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24058,8 +23986,8 @@
           "ram_gb": 8,
           "disk_gb": 160,
           "disk_type": "nvme",
-          "price_hourly": 0.0687,
-          "price_monthly": 42.83,
+          "price_hourly": 0.0569,
+          "price_monthly": 35.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24072,8 +24000,8 @@
           "ram_gb": 16,
           "disk_gb": 160,
           "disk_type": "nvme",
-          "price_hourly": 0.0314,
-          "price_monthly": 19.62,
+          "price_hourly": 0.0256,
+          "price_monthly": 15.99,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24086,8 +24014,8 @@
           "ram_gb": 16,
           "disk_gb": 320,
           "disk_type": "nvme",
-          "price_hourly": 0.1335,
-          "price_monthly": 83.29,
+          "price_hourly": 0.1114,
+          "price_monthly": 69.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24100,8 +24028,8 @@
           "ram_gb": 24,
           "disk_gb": 480,
           "disk_type": "nvme",
-          "price_hourly": 0.1925,
-          "price_monthly": 120.18,
+          "price_hourly": 0.161,
+          "price_monthly": 100.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24114,8 +24042,8 @@
           "ram_gb": 32,
           "disk_gb": 320,
           "disk_type": "nvme",
-          "price_hourly": 0.0572,
-          "price_monthly": 35.69,
+          "price_hourly": 0.0473,
+          "price_monthly": 29.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24128,22 +24056,8 @@
           "ram_gb": 32,
           "disk_gb": 640,
           "disk_type": "nvme",
-          "price_hourly": 0.2488,
-          "price_monthly": 155.28,
-          "currency": "EUR",
-          "architecture": "x86",
-          "location": "eu",
-          "category": "shared"
-        },
-        {
-          "id": "cpx11",
-          "name": "CPX11",
-          "vcpu": 2,
-          "ram_gb": 2,
-          "disk_gb": 40,
-          "disk_type": "nvme",
-          "price_hourly": 0.0343,
-          "price_monthly": 21.41,
+          "price_hourly": 0.2083,
+          "price_monthly": 129.99,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24156,64 +24070,8 @@
           "ram_gb": 2,
           "disk_gb": 40,
           "disk_type": "nvme",
-          "price_hourly": 0.0228,
-          "price_monthly": 14.27,
-          "currency": "EUR",
-          "architecture": "x86",
-          "location": "eu",
-          "category": "shared"
-        },
-        {
-          "id": "cpx21",
-          "name": "CPX21",
-          "vcpu": 3,
-          "ram_gb": 4,
-          "disk_gb": 80,
-          "disk_type": "nvme",
-          "price_hourly": 0.062,
-          "price_monthly": 38.66,
-          "currency": "EUR",
-          "architecture": "x86",
-          "location": "eu",
-          "category": "shared"
-        },
-        {
-          "id": "cpx31",
-          "name": "CPX31",
-          "vcpu": 4,
-          "ram_gb": 8,
-          "disk_gb": 160,
-          "disk_type": "nvme",
-          "price_hourly": 0.1201,
-          "price_monthly": 74.96,
-          "currency": "EUR",
-          "architecture": "x86",
-          "location": "eu",
-          "category": "shared"
-        },
-        {
-          "id": "cpx41",
-          "name": "CPX41",
-          "vcpu": 8,
-          "ram_gb": 16,
-          "disk_gb": 240,
-          "disk_type": "nvme",
-          "price_hourly": 0.2307,
-          "price_monthly": 143.98,
-          "currency": "EUR",
-          "architecture": "x86",
-          "location": "eu",
-          "category": "shared"
-        },
-        {
-          "id": "cpx51",
-          "name": "CPX51",
-          "vcpu": 16,
-          "ram_gb": 32,
-          "disk_gb": 360,
-          "disk_type": "nvme",
-          "price_hourly": 0.4548,
-          "price_monthly": 283.8,
+          "price_hourly": 0.0184,
+          "price_monthly": 11.49,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -24221,28 +24079,28 @@
         }
       ],
       "load_balancer": {
-        "price_monthly": 8.91
+        "price_monthly": 7.49
       },
       "primary_ip": {
         "price_monthly": 0.5
       },
       "block_storage": {
-        "price_per_gb_monthly": 0.0681
+        "price_per_gb_monthly": 0.0572
       },
       "snapshots": {
-        "price_per_gb_monthly": 0.017
+        "price_per_gb_monthly": 0.0143
       },
       "egress": {
         "free_tb": 20,
         "price_per_gb_overage": 0.01
       },
       "object_storage": {
-        "price_per_gb_monthly": 0.0104,
-        "base_monthly": 7.72,
+        "price_per_gb_monthly": 0.0087,
+        "base_monthly": 6.49,
         "included_storage_tb": 1,
         "included_egress_tb": 1,
         "type": "S3-compatible",
-        "notes": "€7.72/month base includes 1TB storage + 1TB egress. Overage: ~€0.0104/GB storage, €0.001/GB egress"
+        "notes": "€6.49/month base includes 1TB storage + 1TB egress. Overage per GB derived from the former gross figures (/1.19); excl. VAT."
       },
       "certifications": [
         "ISO 27001",
@@ -24250,11 +24108,12 @@
         "KRITIS-V / NIS-2",
         "PCI DSS v4.0"
       ],
-      "notes": "Set HETZNER_API_TOKEN env var for live data"
+      "notes": "All prices EUR excl. VAT and excl. Primary IPv4 (see primary_ip), DE/FI locations, as in effect since 2026-06-15. CPX11-CPX51 removed: US-only. CPX12 and load balancer/volume/object storage values converted from the former gross figures (/1.19), not yet re-read from an official page. Set HETZNER_API_TOKEN env var for live data.",
+      "source_url": "https://www.hetzner.com/cloud/"
     },
     "hikube": {
       "provider": "hikube",
-      "fetched_at": "2026-08-12T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "hikube.cloud/tarifs",
       "source_url": "https://hikube.cloud/tarifs",
       "manual": true,
@@ -24659,7 +24518,7 @@
         "ipv6_monthly": 0,
         "currency": "EUR"
       },
-      "notes": "Swiss sovereign cloud by Hidora. High availability included at no extra cost: synchronous triple replication across 3 Swiss datacenters (Geneva, Gland, Lucerne) with automatic public IP failover. CNCF-certified managed Kubernetes. Hourly metering, monthly invoicing. Discounts on 1/3/5-year commitments, no exit fees. All figures are the EUR prices published on hikube.cloud/tarifs, excl. VAT. Hikube sells and invoices in EUR, so no currency conversion is applied here. Block storage IOPS are not public."
+      "notes": "Swiss sovereign cloud by Hidora. High availability included at no extra cost: synchronous triple replication across 3 Swiss datacenters (Geneva, Gland, Lucerne) with automatic public IP failover. CNCF-certified managed Kubernetes. Hourly metering, monthly invoicing. Discounts on 1/3/5-year commitments, no exit fees. Hikube publishes list prices in CHF only (hikube.cloud/tarifs, excl. VAT); billing is possible in CHF or EUR. EUR values here are the CHF list prices converted at 1 CHF = 1.09326 EUR. Block storage IOPS are not public."
     },
     "hostinger": {
       "provider": "hostinger",
@@ -26139,7 +25998,7 @@
     },
     "ionos": {
       "provider": "ionos",
-      "fetched_at": "2026-05-20T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "static",
       "source_url": "https://cloud.ionos.de/managed-kubernetes",
       "manual": true,
@@ -26515,7 +26374,8 @@
         }
       ],
       "load_balancer": {
-        "price_monthly": 7
+        "price_monthly": 14.6,
+        "notes": "€0.02/h per forwarding rule (first 5 rules), minimum one rule."
       },
       "block_storage": {
         "price_per_gb_monthly": 0.15,
@@ -26526,19 +26386,20 @@
         "notes": "HDD €0.04/GB/30d, SSD Premium €0.15/GB/30d. Default: SSD Premium."
       },
       "egress": {
-        "free_tb": 0,
-        "price_per_gb": 0.05
+        "free_tb": 2,
+        "price_per_gb": 0.03,
+        "notes": "First 2 TB/month outbound free (account-wide), then €0.030/GB (2-10 TB), €0.025 (10-50 TB), €0.020 (50-150 TB), €0.015 (>150 TB)."
       },
       "object_storage": {
-        "price_per_gb_monthly": 0.015,
-        "egress_price_per_gb": 0.06,
+        "price_per_gb_monthly": 0.007,
+        "egress_price_per_gb": 0.03,
         "type": "S3-compatible",
-        "notes": "€0.015/GB storage, €0.06/GB egress. Ingress free. German/UK/US data centers."
+        "notes": "€0.007/GB per 30 days. Bucket egress billed as regular outbound traffic. API calls free."
       }
     },
     "leafcloud": {
       "provider": "leafcloud",
-      "fetched_at": "2026-05-20T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "static",
       "source_url": "https://leaf.cloud/pricing/",
       "manual": true,
@@ -27049,22 +26910,6 @@
           "category": "value-core"
         },
         {
-          "id": "eg1.h100x1.V24_96",
-          "name": "eg1.h100x1.V24_96",
-          "vcpu": 24,
-          "ram_gb": 96,
-          "disk_gb": 0,
-          "disk_type": "block-storage-required",
-          "price_hourly": 4.1184,
-          "price_monthly": 3006.43,
-          "currency": "EUR",
-          "architecture": "x86",
-          "location": "nl",
-          "category": "gpu",
-          "gpu_type": "NVIDIA H100",
-          "gpu_count": 1
-        },
-        {
           "id": "eg1.a100x1.V12-84",
           "name": "eg1.a100x1.V12-84",
           "vcpu": 12,
@@ -27191,6 +27036,70 @@
           "category": "gpu",
           "gpu_type": "NVIDIA A30",
           "gpu_count": 8
+        },
+        {
+          "id": "eg1.h100x8.V192_768",
+          "name": "eg1.h100x8.V192_768",
+          "vcpu": 192,
+          "ram_gb": 768,
+          "disk_gb": 0,
+          "disk_type": "block-storage-required",
+          "price_hourly": 25.2,
+          "price_monthly": 18396,
+          "currency": "EUR",
+          "architecture": "x86",
+          "location": "nl",
+          "category": "gpu",
+          "gpu_type": "NVIDIA H100",
+          "gpu_count": 8
+        },
+        {
+          "id": "eg2.rtxp6000x1.V32-256-860",
+          "name": "eg2.rtxp6000x1.V32-256-860",
+          "vcpu": 32,
+          "ram_gb": 256,
+          "disk_gb": 860,
+          "disk_type": "nvme",
+          "price_hourly": 1.99,
+          "price_monthly": 1452.7,
+          "currency": "EUR",
+          "architecture": "x86",
+          "location": "nl",
+          "category": "gpu",
+          "gpu_type": "NVIDIA RTX PRO 6000",
+          "gpu_count": 1
+        },
+        {
+          "id": "eg2.rtxp6000x2.V64-512-1720",
+          "name": "eg2.rtxp6000x2.V64-512-1720",
+          "vcpu": 64,
+          "ram_gb": 512,
+          "disk_gb": 1720,
+          "disk_type": "nvme",
+          "price_hourly": 3.98,
+          "price_monthly": 2905.4,
+          "currency": "EUR",
+          "architecture": "x86",
+          "location": "nl",
+          "category": "gpu",
+          "gpu_type": "NVIDIA RTX PRO 6000",
+          "gpu_count": 2
+        },
+        {
+          "id": "eg2.rtxp6000x4.V128-1024-3440",
+          "name": "eg2_rtxp6000x4_V128_1024_3440",
+          "vcpu": 128,
+          "ram_gb": 1024,
+          "disk_gb": 3440,
+          "disk_type": "nvme",
+          "price_hourly": 7.96,
+          "price_monthly": 5810.8,
+          "currency": "EUR",
+          "architecture": "x86",
+          "location": "nl",
+          "category": "gpu",
+          "gpu_type": "NVIDIA RTX PRO 6000",
+          "gpu_count": 4
         }
       ],
       "load_balancer": {
@@ -27219,9 +27128,10 @@
         "types": [
           "NVIDIA H100",
           "NVIDIA A100",
-          "NVIDIA A30"
+          "NVIDIA A30",
+          "NVIDIA RTX PRO 6000 Blackwell"
         ],
-        "notes": "GPU instances available with 1, 2, 4, or 8 GPUs. Price includes VM."
+        "notes": "H100 sold as 8-GPU instance only. Price includes VM."
       },
       "sustainability": {
         "carbon_neutral": true,
@@ -27321,7 +27231,7 @@
     },
     "nebius": {
       "provider": "nebius",
-      "fetched_at": "2026-05-20T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "static",
       "source_url": "https://docs.nebius.com/compute/resources/pricing",
       "manual": true,
@@ -27330,29 +27240,30 @@
       "pricing_model": "component-based",
       "component_pricing": {
         "vcpu_per_hour_usd": 0.012,
-        "ram_per_gb_hour_usd": 0.0032,
-        "notes": "CPU and RAM billed separately per hour for non-GPU and L40S VMs. Intel Ice Lake and AMD EPYC Genoa have identical CPU/RAM pricing. H100/H200/B200/B300 use unified per-GPU-hour billing (includes vCPU+RAM) since October 1, 2025. Prices in USD, converted at 0.92 EUR/USD."
+        "ram_per_gb_hour_usd": 0.0045,
+        "notes": "CPU and RAM billed separately per hour for non-GPU and L40S VMs. Since 2026-10-01: Intel Ice Lake $0.012/vCPU-h, AMD EPYC Genoa $0.015/vCPU-h, RAM $0.0045/GiB-h. H100/H200/B200/B300 use unified per-GPU-hour billing (includes vCPU+RAM). Prices in USD, converted at 0.92 EUR/USD.",
+        "vcpu_per_hour_usd_amd": 0.015
       },
       "gpu_pricing": {
         "billing_unit": "second",
         "pricing_unit": "hour",
-        "note": "H100/H200/B200/B300 use unified per-GPU-hour billing (vCPU and RAM included) from October 1, 2025. L40S billed with separate GPU+CPU+RAM components.",
+        "note": "H100/H200/B200/B300 use unified per-GPU-hour billing (vCPU and RAM included) from October 1, 2025. L40S billed with separate GPU+CPU+RAM components. On-demand GPU prices effective 2026-10-01. Since 2026-10-08 preemptible GPUs use dynamic spot pricing; preemptible_price_per_gpu_hour_usd is the published minimum.",
         "gpus": [
           {
             "id": "b300-nvlink",
             "name": "NVIDIA B300 NVLink",
             "platform": "gpu-b300-sxm",
-            "price_per_gpu_hour_usd": 6.1,
-            "preemptible_price_per_gpu_hour_usd": 3.4,
-            "location": "uk-south1",
+            "price_per_gpu_hour_usd": 9.5,
+            "preemptible_price_per_gpu_hour_usd": 0.99,
+            "location": "uk-south1, eu-west2, us-north1",
             "notes": "Private region only."
           },
           {
             "id": "b200-nvlink",
             "name": "NVIDIA B200 NVLink",
             "platform": "gpu-b200-sxm",
-            "price_per_gpu_hour_usd": 5.5,
-            "preemptible_price_per_gpu_hour_usd": 2.9,
+            "price_per_gpu_hour_usd": 8.5,
+            "preemptible_price_per_gpu_hour_usd": 0.99,
             "location": "us-central1",
             "notes": "Unified billing (GPU+vCPU+RAM)."
           },
@@ -27360,24 +27271,24 @@
             "id": "b200-nvlink-a",
             "name": "NVIDIA B200 NVLink",
             "platform": "gpu-b200-sxm-a",
-            "price_per_gpu_hour_usd": 5.5,
-            "preemptible_price_per_gpu_hour_usd": 2.9,
+            "price_per_gpu_hour_usd": 8.5,
+            "preemptible_price_per_gpu_hour_usd": 0.99,
             "location": "me-west1",
             "notes": "Unified billing (GPU+vCPU+RAM)."
           },
           {
             "id": "h200-nvlink",
             "name": "NVIDIA H200 NVLink",
-            "price_per_gpu_hour_usd": 3.5,
-            "preemptible_price_per_gpu_hour_usd": 1.45,
+            "price_per_gpu_hour_usd": 5.4,
+            "preemptible_price_per_gpu_hour_usd": 0.79,
             "location": "eu-north1, eu-north2, eu-west1, us-central1",
             "notes": "Unified billing (GPU+vCPU+RAM)."
           },
           {
             "id": "h100-nvlink",
             "name": "NVIDIA H100 NVLink",
-            "price_per_gpu_hour_usd": 2.95,
-            "preemptible_price_per_gpu_hour_usd": 1.25,
+            "price_per_gpu_hour_usd": 4.5,
+            "preemptible_price_per_gpu_hour_usd": 0.79,
             "location": "eu-north1",
             "notes": "Unified billing (GPU+vCPU+RAM)."
           },
@@ -27385,8 +27296,8 @@
             "id": "rtx-pro-6000",
             "name": "NVIDIA RTX PRO 6000",
             "price_per_gpu_hour_usd": 1.8,
-            "preemptible_price_per_gpu_hour_usd": 0.95,
-            "location": "us-central1"
+            "preemptible_price_per_gpu_hour_usd": 0.79,
+            "location": "us-central1 (gpu-rtx6000), uk-south2, eu-south1 (gpu-rtx6000-a)"
           },
           {
             "id": "l40s-intel",
@@ -27418,9 +27329,9 @@
           "ram_gb": 8,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.0456,
-          "price_monthly": 33.29,
-          "price_usd_hourly": 0.0496,
+          "price_hourly": 0.0552,
+          "price_monthly": 40.3,
+          "price_usd_hourly": 0.06,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27434,9 +27345,9 @@
           "ram_gb": 16,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.0913,
-          "price_monthly": 66.65,
-          "price_usd_hourly": 0.0992,
+          "price_hourly": 0.1104,
+          "price_monthly": 80.59,
+          "price_usd_hourly": 0.12,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27450,9 +27361,9 @@
           "ram_gb": 32,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.1825,
-          "price_monthly": 133.22,
-          "price_usd_hourly": 0.1984,
+          "price_hourly": 0.2208,
+          "price_monthly": 161.18,
+          "price_usd_hourly": 0.24,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27466,9 +27377,9 @@
           "ram_gb": 64,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.3651,
-          "price_monthly": 266.52,
-          "price_usd_hourly": 0.3968,
+          "price_hourly": 0.4416,
+          "price_monthly": 322.37,
+          "price_usd_hourly": 0.48,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27482,9 +27393,9 @@
           "ram_gb": 128,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.7301,
-          "price_monthly": 532.97,
-          "price_usd_hourly": 0.7936,
+          "price_hourly": 0.8832,
+          "price_monthly": 644.74,
+          "price_usd_hourly": 0.96,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27498,9 +27409,9 @@
           "ram_gb": 192,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 1.0952,
-          "price_monthly": 799.5,
-          "price_usd_hourly": 1.1904,
+          "price_hourly": 1.3248,
+          "price_monthly": 967.1,
+          "price_usd_hourly": 1.44,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27514,9 +27425,9 @@
           "ram_gb": 320,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 1.8253,
-          "price_monthly": 1332.47,
-          "price_usd_hourly": 1.984,
+          "price_hourly": 2.208,
+          "price_monthly": 1611.84,
+          "price_usd_hourly": 2.4,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27530,9 +27441,9 @@
           "ram_gb": 16,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.0913,
-          "price_monthly": 66.65,
-          "price_usd_hourly": 0.0992,
+          "price_hourly": 0.1214,
+          "price_monthly": 88.62,
+          "price_usd_hourly": 0.132,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27546,9 +27457,9 @@
           "ram_gb": 32,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.1825,
-          "price_monthly": 133.22,
-          "price_usd_hourly": 0.1984,
+          "price_hourly": 0.2429,
+          "price_monthly": 177.32,
+          "price_usd_hourly": 0.264,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27562,9 +27473,9 @@
           "ram_gb": 64,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.3651,
-          "price_monthly": 266.52,
-          "price_usd_hourly": 0.3968,
+          "price_hourly": 0.4858,
+          "price_monthly": 354.63,
+          "price_usd_hourly": 0.528,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27578,9 +27489,9 @@
           "ram_gb": 128,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 0.7301,
-          "price_monthly": 532.97,
-          "price_usd_hourly": 0.7936,
+          "price_hourly": 0.9715,
+          "price_monthly": 709.2,
+          "price_usd_hourly": 1.056,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -27594,9 +27505,9 @@
           "ram_gb": 256,
           "disk_gb": 0,
           "disk_type": "block-storage-required",
-          "price_hourly": 1.4602,
-          "price_monthly": 1065.95,
-          "price_usd_hourly": 1.5872,
+          "price_hourly": 1.943,
+          "price_monthly": 1418.39,
+          "price_usd_hourly": 2.112,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu-north1",
@@ -28030,7 +27941,7 @@
     "nws": {
       "$schema": "./schema.json",
       "provider": "nws",
-      "fetched_at": "2026-06-15T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "static",
       "source_url": "https://nws.netways.de/en/prices",
       "manual": true,
@@ -28266,7 +28177,7 @@
           "name": "Performance Optimized Large",
           "vcpu": 8,
           "ram_gb": 16,
-          "disk_gb": 75,
+          "disk_gb": 100,
           "disk_type": "nvme",
           "price_hourly": 0.12412,
           "price_monthly": 89.37,
@@ -28510,10 +28421,11 @@
       },
       "egress": {
         "free_tb": 0,
-        "price_per_gb": 0.01,
+        "price_per_gb": 0.06,
         "price_per_gb_overage": 0,
         "bandwidth_gbps": 10,
-        "currency": "EUR"
+        "currency": "EUR",
+        "notes": "VM traffic on the edge network €0.06/GB, billed ingress and egress. S3 traffic €0.01/GB."
       },
       "primary_ip": {
         "price_monthly": 7.475,
@@ -29431,7 +29343,7 @@
     },
     "plusserver": {
       "provider": "plusserver",
-      "fetched_at": "2026-06-15T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "static",
       "source_url": "https://shop.plusserver.com/Kubernetes/Managed-Kubernetes/",
       "manual": true,
@@ -29596,7 +29508,7 @@
         }
       ],
       "load_balancer": {
-        "price_monthly": 51.1,
+        "price_monthly": 49.64,
         "notes": "€0.07/hour"
       },
       "block_storage": {
@@ -29609,7 +29521,7 @@
         "notes": "Traffic free with fair use policy"
       },
       "object_storage": {
-        "price_per_gb_monthly": 0.0245,
+        "price_per_gb_monthly": 0.022,
         "type": "S3-compatible",
         "notes": "plusserver S3 Object Storage"
       },
@@ -29620,10 +29532,10 @@
     },
     "safespring": {
       "provider": "safespring",
-      "fetched_at": "2026-05-20T12:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "safespring.com/en/price",
       "manual": true,
-      "control_plane_cost": 0,
+      "control_plane_cost": 436.1,
       "instances": [
         {
           "id": "b2-c1r2",
@@ -29801,7 +29713,7 @@
           "disk_gb": 1000,
           "disk_type": "nvme",
           "price_hourly": 0.1708,
-          "price_monthly": 122.78,
+          "price_monthly": 122.82,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -29843,7 +29755,7 @@
           "disk_gb": 1000,
           "disk_type": "nvme",
           "price_hourly": 0.2171,
-          "price_monthly": 156.59,
+          "price_monthly": 156.64,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -29885,7 +29797,7 @@
           "disk_gb": 1000,
           "disk_type": "nvme",
           "price_hourly": 0.3114,
-          "price_monthly": 224.2,
+          "price_monthly": 224.28,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -29927,7 +29839,7 @@
           "disk_gb": 1000,
           "disk_type": "nvme",
           "price_hourly": 0.4991,
-          "price_monthly": 359.43,
+          "price_monthly": 359.56,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -29941,7 +29853,7 @@
           "disk_gb": 500,
           "disk_type": "nvme",
           "price_hourly": 0.6548,
-          "price_monthly": 471.53,
+          "price_monthly": 471.7,
           "currency": "EUR",
           "architecture": "x86",
           "location": "eu",
@@ -30015,7 +29927,7 @@
           "disk_gb": 0,
           "gpu": "NVIDIA H100",
           "gpu_count": 1,
-          "price_monthly": 2138.26,
+          "price_monthly": 2138.14,
           "currency": "EUR"
         }
       ],
@@ -30038,15 +29950,15 @@
         "price_per_gb": 0,
         "notes": "Zero egress fees - no traffic cost for data sent to or from services"
       },
-      "notes": "Swedish cloud provider. b2 flavors use network storage, l2 flavors have local NVMe. GPU options with NVIDIA A2."
+      "notes": "Swedish cloud provider. b2 flavors use network storage, l2 flavors have local NVMe. GPU options with NVIDIA A2. Managed Kubernetes control plane €436.10/month per cluster (unmanaged control plane €0); control-plane and worker nodes billed as normal instances."
     },
     "scaleup": {
       "provider": "scaleup",
-      "fetched_at": "2026-06-15T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "Preisliste ScaleUp Open Cloud 2026-03, Preisliste OpenStack 2022-07",
       "source_url": "https://www.scaleuptech.com/de/open-cloud/",
       "manual": true,
-      "control_plane_cost": 73,
+      "control_plane_cost": 50,
       "instances": [
         {
           "id": "m2.micro",
@@ -30181,7 +30093,7 @@
         "free_tb": "unlimited",
         "notes": "Free with fair use policy"
       },
-      "notes": "Pricing is resource-based: 0.02€/h per CPU core, 0.005€/h per GB RAM (730h/month). Based on Sovereign Cloud Stack (SCS). K8s non-HA: 0.10€/h (73€/month), K8s HA: 0.30€/h (219€/month). Resource packages available with 12-month commitment."
+      "notes": "Pricing is resource-based: 0.02€/h per CPU core, 0.005€/h per GB RAM (730h/month). Based on Sovereign Cloud Stack (SCS). Managed Kubernetes control plane: single node €50/month, HA €150/month. Resource packages available with 12-month commitment."
     },
     "scaleway": {
       "provider": "scaleway",
@@ -32326,7 +32238,7 @@
         "free_tb": "unlimited",
         "notes": "Unlimited traffic included with 50 Mbps non-tariffed bandwidth"
       },
-      "notes": "vStack cloud with pay-as-you-go billing in 10-minute increments. Fixed plans for Linux shown. Kubernetes control plane: €21.85/mo (standard), €65.55/mo (HA). Locations: Amsterdam, Toronto, Dubai, Almaty, New Jersey, Sao Paulo, Tashkent (Uzbekistan)."
+      "notes": "vStack cloud with pay-as-you-go billing in 10-minute increments. Fixed plans for Linux shown. Kubernetes control plane: €21.85/mo (standard), €65.55/mo (HA). Locations: Amsterdam, Toronto, Dubai, Almaty, New Jersey, Sao Paulo, Tashkent (Uzbekistan). Since 2026-09-15 the Amsterdam location (Equinix AM2) is without power and no longer selectable; Serverspace says it does not know if or when access will be restored. Prices not re-verified."
     },
     "stackit": {
       "provider": "stackit",
@@ -35527,7 +35439,7 @@
     },
     "upcloud": {
       "provider": "upcloud",
-      "fetched_at": "2026-06-15T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "upcloud.com/pricing (Starter, Premium, Cloud Native)",
       "manual": true,
       "instances": [
@@ -36679,12 +36591,13 @@
         "type": "S3-compatible",
         "notes": "€5/month per 250GB block (€0.02/GB). Zero-cost egress included."
       },
-      "notes": "Lineup changed 2026: Starter (budget SSD), Premium (MaxIOPS, production), Cloud Native (decoupled compute/storage). Cloud Native disk billed separately so no disk_gb. Old General Purpose/High CPU/High Memory plans discontinued.",
-      "source_url": "https://upcloud.com/pricing/"
+      "notes": "Lineup changed 2026: Starter (budget SSD), Premium (MaxIOPS, production), Cloud Native (decoupled compute/storage). Cloud Native disk billed separately so no disk_gb. Old General Purpose/High CPU/High Memory plans discontinued. Managed Kubernetes control plane: Development (up to 30 nodes) €0, Production (up to 120 nodes) €60/month.",
+      "source_url": "https://upcloud.com/pricing/",
+      "control_plane_cost": 0
     },
     "webdock": {
       "provider": "webdock",
-      "fetched_at": "2026-06-15T00:00:00.000Z",
+      "fetched_at": "2026-10-12T00:00:00.000Z",
       "source": "static",
       "source_url": "https://webdock.io/en/pricing",
       "manual": true,
@@ -36747,7 +36660,7 @@
       },
       "egress": {
         "free_tb": 1,
-        "price_per_gb": 0,
+        "price_per_gb": 0.0025,
         "notes": "1-7TB included depending on plan. Fair usage policy."
       },
       "object_storage": {
