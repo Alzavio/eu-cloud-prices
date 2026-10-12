@@ -1,9 +1,9 @@
 {
   "provider": "safespring",
-  "fetched_at": "2026-05-20T12:00:00.000Z",
+  "fetched_at": "2026-10-12T00:00:00.000Z",
   "source": "safespring.com/en/price",
   "manual": true,
-  "control_plane_cost": 0,
+  "control_plane_cost": 436.1,
   "instances": [
     {
       "id": "b2-c1r2",
@@ -181,7 +181,7 @@
       "disk_gb": 1000,
       "disk_type": "nvme",
       "price_hourly": 0.1708,
-      "price_monthly": 122.78,
+      "price_monthly": 122.82,
       "currency": "EUR",
       "architecture": "x86",
       "location": "eu",
@@ -223,7 +223,7 @@
       "disk_gb": 1000,
       "disk_type": "nvme",
       "price_hourly": 0.2171,
-      "price_monthly": 156.59,
+      "price_monthly": 156.64,
       "currency": "EUR",
       "architecture": "x86",
       "location": "eu",
@@ -265,7 +265,7 @@
       "disk_gb": 1000,
       "disk_type": "nvme",
       "price_hourly": 0.3114,
-      "price_monthly": 224.20,
+      "price_monthly": 224.28,
       "currency": "EUR",
       "architecture": "x86",
       "location": "eu",
@@ -307,7 +307,7 @@
       "disk_gb": 1000,
       "disk_type": "nvme",
       "price_hourly": 0.4991,
-      "price_monthly": 359.43,
+      "price_monthly": 359.56,
       "currency": "EUR",
       "architecture": "x86",
       "location": "eu",
@@ -321,7 +321,7 @@
       "disk_gb": 500,
       "disk_type": "nvme",
       "price_hourly": 0.6548,
-      "price_monthly": 471.53,
+      "price_monthly": 471.7,
       "currency": "EUR",
       "architecture": "x86",
       "location": "eu",
@@ -395,7 +395,7 @@
       "disk_gb": 0,
       "gpu": "NVIDIA H100",
       "gpu_count": 1,
-      "price_monthly": 2138.26,
+      "price_monthly": 2138.14,
       "currency": "EUR"
     }
   ],
@@ -418,5 +418,5 @@
     "price_per_gb": 0,
     "notes": "Zero egress fees - no traffic cost for data sent to or from services"
   },
-  "notes": "Swedish cloud provider. b2 flavors use network storage, l2 flavors have local NVMe. GPU options with NVIDIA A2."
+  "notes": "Swedish cloud provider. b2 flavors use network storage, l2 flavors have local NVMe. GPU options with NVIDIA A2. Managed Kubernetes control plane €436.10/month per cluster (unmanaged control plane €0); control-plane and worker nodes billed as normal instances."
 }

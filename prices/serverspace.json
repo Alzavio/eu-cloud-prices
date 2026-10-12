@@ -175,5 +175,5 @@
     "free_tb": "unlimited",
     "notes": "Unlimited traffic included with 50 Mbps non-tariffed bandwidth"
   },
-  "notes": "vStack cloud with pay-as-you-go billing in 10-minute increments. Fixed plans for Linux shown. Kubernetes control plane: €21.85/mo (standard), €65.55/mo (HA). Locations: Amsterdam, Toronto, Dubai, Almaty, New Jersey, Sao Paulo, Tashkent (Uzbekistan)."
+  "notes": "vStack cloud with pay-as-you-go billing in 10-minute increments. Fixed plans for Linux shown. Kubernetes control plane: €21.85/mo (standard), €65.55/mo (HA). Locations: Amsterdam, Toronto, Dubai, Almaty, New Jersey, Sao Paulo, Tashkent (Uzbekistan). Since 2026-09-15 the Amsterdam location (Equinix AM2) is without power and no longer selectable; Serverspace says it does not know if or when access will be restored. Prices not re-verified."
 }

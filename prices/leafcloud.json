@@ -1,6 +1,6 @@
 {
   "provider": "leafcloud",
-  "fetched_at": "2026-05-20T00:00:00.000Z",
+  "fetched_at": "2026-10-12T00:00:00.000Z",
   "source": "static",
   "source_url": "https://leaf.cloud/pricing/",
   "manual": true,
@@ -511,22 +511,6 @@
       "category": "value-core"
     },
     {
-      "id": "eg1.h100x1.V24_96",
-      "name": "eg1.h100x1.V24_96",
-      "vcpu": 24,
-      "ram_gb": 96,
-      "disk_gb": 0,
-      "disk_type": "block-storage-required",
-      "price_hourly": 4.1184,
-      "price_monthly": 3006.43,
-      "currency": "EUR",
-      "architecture": "x86",
-      "location": "nl",
-      "category": "gpu",
-      "gpu_type": "NVIDIA H100",
-      "gpu_count": 1
-    },
-    {
       "id": "eg1.a100x1.V12-84",
       "name": "eg1.a100x1.V12-84",
       "vcpu": 12,
@@ -653,6 +637,70 @@
       "category": "gpu",
       "gpu_type": "NVIDIA A30",
       "gpu_count": 8
+    },
+    {
+      "id": "eg1.h100x8.V192_768",
+      "name": "eg1.h100x8.V192_768",
+      "vcpu": 192,
+      "ram_gb": 768,
+      "disk_gb": 0,
+      "disk_type": "block-storage-required",
+      "price_hourly": 25.2,
+      "price_monthly": 18396,
+      "currency": "EUR",
+      "architecture": "x86",
+      "location": "nl",
+      "category": "gpu",
+      "gpu_type": "NVIDIA H100",
+      "gpu_count": 8
+    },
+    {
+      "id": "eg2.rtxp6000x1.V32-256-860",
+      "name": "eg2.rtxp6000x1.V32-256-860",
+      "vcpu": 32,
+      "ram_gb": 256,
+      "disk_gb": 860,
+      "disk_type": "nvme",
+      "price_hourly": 1.99,
+      "price_monthly": 1452.7,
+      "currency": "EUR",
+      "architecture": "x86",
+      "location": "nl",
+      "category": "gpu",
+      "gpu_type": "NVIDIA RTX PRO 6000",
+      "gpu_count": 1
+    },
+    {
+      "id": "eg2.rtxp6000x2.V64-512-1720",
+      "name": "eg2.rtxp6000x2.V64-512-1720",
+      "vcpu": 64,
+      "ram_gb": 512,
+      "disk_gb": 1720,
+      "disk_type": "nvme",
+      "price_hourly": 3.98,
+      "price_monthly": 2905.4,
+      "currency": "EUR",
+      "architecture": "x86",
+      "location": "nl",
+      "category": "gpu",
+      "gpu_type": "NVIDIA RTX PRO 6000",
+      "gpu_count": 2
+    },
+    {
+      "id": "eg2.rtxp6000x4.V128-1024-3440",
+      "name": "eg2_rtxp6000x4_V128_1024_3440",
+      "vcpu": 128,
+      "ram_gb": 1024,
+      "disk_gb": 3440,
+      "disk_type": "nvme",
+      "price_hourly": 7.96,
+      "price_monthly": 5810.8,
+      "currency": "EUR",
+      "architecture": "x86",
+      "location": "nl",
+      "category": "gpu",
+      "gpu_type": "NVIDIA RTX PRO 6000",
+      "gpu_count": 4
     }
   ],
   "load_balancer": {
@@ -671,7 +719,7 @@
     "notes": "Free up to 100GB/month, fair pricing above threshold"
   },
   "object_storage": {
-    "price_per_gb_hourly": 0.00003328,
+    "price_per_gb_hourly": 3.328e-05,
     "price_per_gb_monthly": 0.0242944,
     "type": "S3-compatible",
     "notes": "OpenStack Swift with S3 API compatibility"
@@ -681,9 +729,10 @@
     "types": [
       "NVIDIA H100",
       "NVIDIA A100",
-      "NVIDIA A30"
+      "NVIDIA A30",
+      "NVIDIA RTX PRO 6000 Blackwell"
     ],
-    "notes": "GPU instances available with 1, 2, 4, or 8 GPUs. Price includes VM."
+    "notes": "H100 sold as 8-GPU instance only. Price includes VM."
   },
   "sustainability": {
     "carbon_neutral": true,

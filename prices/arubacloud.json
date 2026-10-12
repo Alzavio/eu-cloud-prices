@@ -1,6 +1,6 @@
 {
   "provider": "arubacloud",
-  "fetched_at": "2026-05-20T00:00:00.000Z",
+  "fetched_at": "2026-10-12T00:00:00.000Z",
   "source": "static",
   "source_url": "https://www.arubacloud.com/vps/",
   "manual": true,
@@ -131,7 +131,7 @@
     "notes": "Bandwidth included per plan (2TB-100TB)."
   },
   "object_storage": {
-    "price_per_gb_monthly": 0.03,
+    "price_per_gb_monthly": 0.0204,
     "type": "S3-compatible",
     "notes": "Aruba Object Storage available"
   }

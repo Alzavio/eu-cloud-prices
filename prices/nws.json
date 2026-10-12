@@ -1,7 +1,7 @@
 {
   "$schema": "./schema.json",
   "provider": "nws",
-  "fetched_at": "2026-06-15T00:00:00.000Z",
+  "fetched_at": "2026-10-12T00:00:00.000Z",
   "source": "static",
   "source_url": "https://nws.netways.de/en/prices",
   "manual": true,
@@ -237,7 +237,7 @@
       "name": "Performance Optimized Large",
       "vcpu": 8,
       "ram_gb": 16,
-      "disk_gb": 75,
+      "disk_gb": 100,
       "disk_type": "nvme",
       "price_hourly": 0.12412,
       "price_monthly": 89.37,
@@ -481,10 +481,11 @@
   },
   "egress": {
     "free_tb": 0,
-    "price_per_gb": 0.01,
+    "price_per_gb": 0.06,
     "price_per_gb_overage": 0,
     "bandwidth_gbps": 10,
-    "currency": "EUR"
+    "currency": "EUR",
+    "notes": "VM traffic on the edge network €0.06/GB, billed ingress and egress. S3 traffic €0.01/GB."
   },
   "primary_ip": {
     "price_monthly": 7.475,

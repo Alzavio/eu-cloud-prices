@@ -1,6 +1,6 @@
 {
   "provider": "ionos",
-  "fetched_at": "2026-05-20T00:00:00.000Z",
+  "fetched_at": "2026-10-12T00:00:00.000Z",
   "source": "static",
   "source_url": "https://cloud.ionos.de/managed-kubernetes",
   "manual": true,
@@ -376,7 +376,8 @@
     }
   ],
   "load_balancer": {
-    "price_monthly": 7
+    "price_monthly": 14.6,
+    "notes": "€0.02/h per forwarding rule (first 5 rules), minimum one rule."
   },
   "block_storage": {
     "price_per_gb_monthly": 0.15,
@@ -387,13 +388,14 @@
     "notes": "HDD €0.04/GB/30d, SSD Premium €0.15/GB/30d. Default: SSD Premium."
   },
   "egress": {
-    "free_tb": 0,
-    "price_per_gb": 0.05
+    "free_tb": 2,
+    "price_per_gb": 0.03,
+    "notes": "First 2 TB/month outbound free (account-wide), then €0.030/GB (2-10 TB), €0.025 (10-50 TB), €0.020 (50-150 TB), €0.015 (>150 TB)."
   },
   "object_storage": {
-    "price_per_gb_monthly": 0.015,
-    "egress_price_per_gb": 0.06,
+    "price_per_gb_monthly": 0.007,
+    "egress_price_per_gb": 0.03,
     "type": "S3-compatible",
-    "notes": "€0.015/GB storage, €0.06/GB egress. Ingress free. German/UK/US data centers."
+    "notes": "€0.007/GB per 30 days. Bucket egress billed as regular outbound traffic. API calls free."
   }
 }
